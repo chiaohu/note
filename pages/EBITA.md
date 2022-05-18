@@ -1,0 +1,2 @@
+- 扣除利息、稅項、折舊、攤銷前利潤（Earnings Before Interest, Taxation, Depreciation and Amortisation）
+- 息稅折舊攤銷前淨利

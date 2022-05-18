@@ -1,1 +1,12 @@
--
+- [[logseq教學]]
+  id:: 6278cae5-356c-48df-baaa-b62c3fbe32cb
+- [[投資筆記]]
+- [[讀書心得與筆記]]
+- [[HTML/CSS]]
+- [[JQuery]]
+- [[JavaScript]]
+- [[Git]]
+- [[Vue]]
+- [[演算法]]
+- [[SQL]]
+- [[Node.js]]

@@ -1,0 +1,1 @@
+- 扣除利息、稅項前利潤（Earnings Before Interest And Taxation）

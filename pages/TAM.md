@@ -1,0 +1,1 @@
+- 淺在市場範圍 (Total Addressable Market)

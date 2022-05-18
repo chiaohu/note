@@ -1,0 +1,1 @@
+- (Net Cash Asset Value): 流動資產-總負債

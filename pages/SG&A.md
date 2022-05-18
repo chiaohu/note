@@ -1,0 +1,1 @@
+- 營業費用(operating expenses)，包括行銷與行政管理薪資、研發費用。

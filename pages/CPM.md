@@ -1,0 +1,1 @@
+- (Cost Per mille - Cost per 1000 impressions)：廣告在網路上曝光 1000 次所需要的費用

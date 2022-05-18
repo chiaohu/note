@@ -1,0 +1,1 @@
+- (Average Revenue Per User) 每個用戶平均的收入，用以描述平均每個用戶能為企業帶來多少收入。
