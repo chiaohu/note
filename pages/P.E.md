@@ -1,0 +1,3 @@
+- 本益比
+- 價格（Price）/每股盈餘（Earning Per Share, EPS）
+- 市值(市價 x 流通在外股數) / 淨收入

@@ -1,0 +1,1 @@
+- (企業價值 (Enterprise Value, EV) = (市值 + 淨負債) / 自由現金流量 (Free Cash Flow, FCF)
