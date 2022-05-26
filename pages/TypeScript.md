@@ -3,6 +3,13 @@
   function alertName(): void {
       alert('My name is Tom');
   }
+  // 陣列
+  let arr : string[] = ['1']
+  let arr : string[[]] = [[],[]]  //裡面一樣不能放數字
+  
+  //元祖
+  let tuple: [number, string boolean] = [1, 'a', true] //只能照順序
+  let tuple2: [string, string][] = [['a', 'b']] //只能照順序
   ```
 - 宣告一個 [[void ]] 型別的變數沒有什麼用，因為你只能將它賦值為 undefined 和 null
 - undefined 和 null 是所有型別的子型別，可以賦值給所有型別
@@ -31,4 +38,63 @@
   tom.id = 89757; // 報錯:不能再給ID賦值了
   ```
 - ---
--
+- object
+- ```
+  // 跟interface很像但是TYPE不可擴充
+  type card = {
+    name: string,
+    desc: string
+  }
+  const obf: card {
+    name: '1',
+    desc: '2'
+  }
+  ```
+- 編譯成JS檔案，終端機輸入TSC + 檔名。
+- config檔 tsc --init
+	- 編譯的路徑入口，先創建一個src的資料夾 rootDir: './src'
+	- 編譯的路徑出口，創建一個dist資料夾 outDir:'./dist'
+	- inlineSourceMpt : true 打開 這樣console可以直接看到TS檔的內容
+- ---
+- [[Enum]]:枚舉，列舉 : 用於取值被限定在一定範圍內的場景
+- ```
+  enum Days {Sun, Mon, Tue, Wed, Thu, Fri, Sat};
+  // 手動賦值
+  enum Days {
+  Sun = 7, 
+  Mon = 1, 
+  Tue = 2, 
+  Wed = 3, 
+  Thu = 4, 
+  Fri = 5, 
+  Sat = 6
+  };
+  ```
+- ---
+- [[Union]]:聯合型別
+- ```
+  let myFavoriteNumber: string | number;
+  ```
+- ---
+- [[type]]
+- ```
+  type A = number || string
+  let a1: A
+  a1 = 999 // 不能放不是的類型
+  ```
+- ---
+- function
+- ```
+  function hello (a: string, b: string) {
+  	return a + b
+  }
+  function hello2 (a, b): number {
+  	return 999
+  }
+  // undefined
+  function hello3 (a: string, b?:number): number {
+  	// 沒有的話B是undefined
+      if (B === undefined) return
+      return 999
+  }
+  ```
