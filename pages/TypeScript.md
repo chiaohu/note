@@ -98,3 +98,20 @@
       return 999
   }
   ```
+- ---
+- 斷言、unknown
+- ```
+  // 假設連接API收到的參數無法得知型別 ts推導不出來
+  type Data {
+  	userId: number,
+      id: number,
+      title: string,
+      completed: Boolean
+  }
+  
+  async function getData () {
+  	const res = await fetch('api')
+      const data = await res.json() as Data
+  }
+  ```
+-
