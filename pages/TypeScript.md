@@ -115,4 +115,73 @@
       const data = await res.json() as Data
   }
   ```
+- ---
+- class
+- private 私有
+- public 公開
+- protected 受保護
+- ```
+  class Live {
+  	roomName: string //沒寫就是public
+      private id: string
+      protected name: string
+      
+      constructor (roomName1: string, id1: string, name1: string) {
+      	this.roomName = roomName1
+          this.id = id1
+          this.name = name1
+      }
+  }
+  
+  const live = new Live('1號', '000001', 'james')
+  
+  class CarLive extends Live { //繼承
+  	constructor (roomName1: string, id1: string, name1: string) {
+      	super(roomName1, id1, name1)  //要使用原繼承的東西要用SUPER
+      }
+  }
+  
+  // class與介面
+  export interfacec CarProps {
+  	name: string
+      age: number
+  }
+  class Car implements CarProps {
+  	name: string
+      age: number
+      
+      constructor(nameL string, age: number) {
+      	this.name = name 
+          this.age = age
+      }
+  }
+  ```
+- js 私有變數
+- ```
+  class Live2 {
+  	#name //私有變數
+      constructor (name: string) {
+      	this.#name = name
+      }
+  }
+  ```
+- ---
+- 泛型
+- ```
+  function<T> (data: T) {
+  	console.log('data', data)
+  }
+  
+  print<number>(999)
+  print<string>('999')
+  print<boolean>(true)
+  
+  class Print<T> {
+  	data: T
+      constructor(d: T) {
+      	this.data = d
+      }
+  }
+  ```
+- ---
 -
