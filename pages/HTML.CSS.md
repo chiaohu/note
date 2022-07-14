@@ -165,5 +165,14 @@
       background-size: cover;
       background-attachment: fixed;
     }
+    
+    // css判斷a連結後面的檔案 因為附檔名有大小寫分別後面+i就可以全部吃到
+  a[href$=".png" i] { background-image: url("icon-png.png"); }
+  a[href$=".pdf" i] { background-image: url("icon-pdf.png"); }
+  a[href$=".psd" i] { background-image: url("icon-psd.png"); }
+  a[href$=".docx" i] { background-image: url("icon-docx.png"); }
+  a[href$=".doc" i] { background-image: url("icon-docx.png"); }
+    
   ```
--
+- ---
+- aspect-ratio : 1 / 1  (寬高比)

@@ -133,4 +133,39 @@
   2.但從創造到實際宣告的階段會出現TDZ(暫時性死區) ，這個區域無法呼叫變數
   3.有創造到執行的概念，但不會預先出現undefined 而是出現錯誤提示
   (文件不會表明這與var的Hoisting相同)
+  
+  // 定錨滑動效果JS
+  test(e) {
+    if (window.scrollTo) {
+      const target = document.getElementById(e.target.hash.replace('#', ''))
+      e.preventDefault()
+      window.scrollTo({ 'behavior': 'smooth', 'top': target.getBoundingClientRect().top + window.scrollY })
+    }
+  }
+  
+  // input輸入到一定的數字後自動focus下一個input  vue的作法
+  
+  .nextSibling:在相同的層級中返回下一個節點如果沒有下一個節點返回null
+  input的name設定為index並且+上maxlength屬性限制字數(要讀取時要改成maxLength)
+  接著寫函式帶入的參數為當下的input本身與總共的長度
+  判斷條件為當input.value的長度等於限制的最大長度且input.name不等於總共的長度-1
+  
+  範例:
+  <input
+    v-for="(item,index) in cardNo"
+    v-model="cardNo[index]"
+    @keyup="changeInput($event.target, cardNo)"
+    :name="index"
+    maxlength="4"
+    inputmode="numeric"
+    pattern="[0-9]*"
+    placeholder="4位數字"
+  />
+  
+  changeInput(input, cardNo) {
+    if (input.value.length === parseInt(input.maxLength) && parseInt(input.name) !== cardNo.length - 1) {
+      input = input.nextSibling
+    }
+    input.focus()
+  }
   ```

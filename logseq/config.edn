@@ -173,7 +173,7 @@
 
  :ref/linked-references-collapsed-threshold 50
  :ui/show-brackets? false
- :favorites ["讀書心得與筆記" "投資筆記"]
+ :favorites ("暫時區" "讀書心得與筆記" "投資筆記" "JavaScript" "HTML/CSS" "Vue" "Node.js" "TypeScript" "SQL" "演算法")
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5
